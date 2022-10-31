@@ -3,8 +3,8 @@ project(Competitive_programming)
 
 set(CMAKE_CXX_STANDARD 14)
 
-include_directories(DataStructures/LinkedList/base_code)
+include_directories(DSA/DataStructures/LinkedList/base_code)
 
 add_executable(Competitive_programming
-        DataStructures/LinkedList/base_code/LinkedListTemplate.cpp
-        DataStructures/LinkedList/base_code/LinkedListTemplate.h)
+        DSA/DataStructures/LinkedList/base_code/LinkedListTemplate.cpp
+        DSA/DataStructures/LinkedList/base_code/LinkedListTemplate.h)

@@ -48,7 +48,21 @@ public:
     cout<<endl;
 }
 int main() {
-    ListNode *head;
+     int n; // number of nodes
+     int itr = n;
+     ListNode *head, *prev;
+     while(itr--) {
+         int val;
+         cin>>val;
+         if(itr == n-1) {
+             head = new ListNode(val, NULL);
+             prev = head;
+         } else {
+             prev = new ListNode(val, prev);
+         }
+     }
+//    head = first;
+    print(head);
     ListNode *first = new ListNode(3, NULL);
     ListNode *second = new ListNode(5, first);
     ListNode *third = new ListNode(2, second);
